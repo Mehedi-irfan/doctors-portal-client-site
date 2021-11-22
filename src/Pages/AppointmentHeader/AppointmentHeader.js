@@ -5,7 +5,7 @@ import chair from '../../images/chair.png';
 import { Container, Typography } from '@mui/material';
 import Calender from '../Calender/Calender';
 
-const AppointmentHeader = ({value, setValue}) => {
+const AppointmentHeader = ({ date, setDate}) => {
     return (
        <Container>
             <Box sx={{ width: '100%', mt : '70px' }}>
@@ -14,7 +14,7 @@ const AppointmentHeader = ({value, setValue}) => {
             <Typography variant='h4' style={{marginLeft : '80px' }}>
                 Appointment
             </Typography>
-            <Calender value={value} setValue={setValue}></Calender>
+            <Calender date={date} setDate={setDate}></Calender>
           </Grid>
           <Grid item xs={6} md={6}>
             <img src={chair} style={{width : '90%'}} alt="" />
